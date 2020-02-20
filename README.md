@@ -1,4 +1,4 @@
 # CMP105_W1
 Lab1 window
-Declan van de Werken
-1904593
+Name: Declan van de Werken
+Student Number: 1904593
