@@ -23,6 +23,10 @@ Level::Level(sf::RenderWindow* hwnd)
 	circle.setOutlineColor(sf::Color::Red);
 	circle.setOutlineThickness(9.f);
 
+	rect3.setSize(sf::Vector2f(100, 100));
+	rect3.setPosition(window->getSize().x-100, window-> getSize().y - 100);
+	rect3.setFillColor(sf::Color::Green);
+
 	//render text 
 	if (!font.loadFromFile("font/arial.ttf"));
 	{
@@ -44,7 +48,7 @@ Level::~Level()
 // handle user input
 void Level::handleInput()
 {
-
+	rect3.setPosition(window->getSize().x - 100, window->getSize().y - 100);
 }
 
 // Update game objects
@@ -61,6 +65,7 @@ void Level::render()
 	window->draw(rect);
 	window->draw(rect1);
 	window->draw(rect2);
+	window->draw(rect3);
 	window->draw(circle);
 	window->draw(text);
 
